@@ -10,26 +10,27 @@ if (Number.isNaN(c) == false) {
 
 let p = (a + b + c) / 2;
 let square = Math.sqrt(p * (p - a) * (p - b) * (p - c));
-
+let angled = false;
 if (a > b) {
     if (a > c) {
         if (a*a == b*b + c*c) {
-            console.log("Yes");
-        } else { console.log("No"); }    
-    }else { console.log("No"); }
-} else { console.log("No"); }
+            angled = true;
+        } else {  }    
+    }else { }
+} else {  }
 if (b > a) {
     if (b > c) {
         if (b*b == a*a + c*c) {
-            console.log("Yes");
-        } else { console.log("No"); }    
-    }else { console.log("No"); }
-} else { console.log("No"); }
+            angled = true;
+        } else {  }    
+    }else { }
+} else {  }
 if (c > b) {
     if (c > a) {
         if (c*c == b*b + a*a) {
-            console.log("Yes");
-        } else { console.log("No"); }    
-    }else { console.log("No"); }
-} else { console.log("No"); }
-console.log(square.toFixed(3));
+            angled = true;
+        } else {  }    
+    }else { }
+} else { }
+console.log("Area of ​​a triangle is " + square.toFixed(3));
+console.log("This triangle is right angled - " + angled);
