@@ -1,6 +1,6 @@
 // let currentDate = new Date();
 // if (currentDate.getHours() >= 5 && currentDate.getHours() < 11) {
-//     alert("Доброї ночі");
+//     alert("Доброї ранку");
 // } if (currentDate.getHours() >= 11 && currentDate.getHours() < 17) {
 //     alert("Доброго дня");
 // } if (currentDate.getHours() >= 17 && currentDate.getHours() < 23) {
@@ -8,54 +8,47 @@
 // } alert("Доброї ночі");
 
 let currentDate = new Date();
-switch (currentDate.getHours()) {
-    case 23: alert("Доброї ночі");
+switch (true) {
+    case currentDate.getHours() >= 5 && currentDate.getHours() < 11:
+        alert("Доброї ранку");
         break;
-    case 0: alert("Доброї ночі");
+    case currentDate.getHours() >= 11 && currentDate.getHours() < 17:
+        alert("Доброго дня");
         break;
-    case 1: alert("Доброї ночі");
+    case currentDate.getHours() >= 17 && currentDate.getHours() < 23:
+        alert("Доброго вечора");
         break;
-    case 2: alert("Доброї ночі");
-        break;
-    case 3: alert("Доброї ночі");
-        break;
-    case 4: alert("Доброї ночі");
-        break;
-    case 5: alert("Доброї ночі");
-        break;
-    case 6: alert("Доброго ранку");
-        break;
-    case 7: alert("Доброго ранку");
-        break;
-    case 8: alert("Доброго ранку");
-        break;
-    case 9: alert("Доброго ранку");
-        break;
-    case 10: alert("Доброго ранку");
-        break;
-    case 11: alert("Доброго дня");
-        break;
-    case 12: alert("Доброго дня");
-        break;
-    case 13: alert("Доброго дня");
-        break;
-    case 14: alert("Доброго дня");
-        break;
-    case 15: alert("Доброго дня");
-        break;
-    case 16: alert("Доброго дня");
-        break;
-    case 17: alert("Доброго вечора");
-        break;
-    case 18: alert("Доброго вечора");
-        break;
-    case 19: alert("Доброго вечора");
-        break;
-    case 20: alert("Доброго вечора");
-        break;
-    case 21: alert("Доброго вечора");
-        break;
-    case 22: alert("Доброго вечора");
-        break;
+    default: alert("Доброї ночі");
 }
+// let currentDate = new Date();
+// switch (currentDate.getHours()) {
+//     case 23:        
+//     case 0:         
+//     case 1:         
+//     case 2:        
+//     case 3: 
+//     case 4: 
+//     case 5: alert("Доброї ночі");
+//         break;
+//     case 6: 
+//     case 7: 
+//     case 8: 
+//     case 9: 
+//     case 10: alert("Доброго ранку");
+//         break;
+//     case 11: 
+//     case 12: 
+//     case 13: 
+//     case 14: 
+//     case 15: 
+//     case 16: alert("Доброго дня");
+//         break;
+//     case 17: 
+//     case 18: 
+//     case 19: 
+//     case 20: 
+//     case 21: 
+//     case 22: alert("Доброго вечора");
+//         break;
+// }
 

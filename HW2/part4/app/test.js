@@ -1,25 +1,25 @@
 let arr = [4, 5, 2, 1, 6, 5, 3, 5, 2, 5]
 let data = {}; // 5
-let count;
+let count = 0;
+let newArr = [];
 for (const item of arr) {
-    data[item] = data[item] ? data[item] + 1 : 1;  
-    if (arr[item] >)
+    data[item] = data[item] ? data[item] + 1 : 1;     
 }
+const result = Object.keys(data).filter((item) => data[item] > 1);
+//console.log(result); 
 
-console.log(data); // [4, 2, 1, 6, 3, 2]
-//const numbers = [4, 3, 3, 1, 15, 7, 4, 19, 19]; // исходный массив
+for (const i of result) {
+  if (i > count) {
+    count = i;
+  }
+  }
+  let myArray = ['one', 'two', 'three'];
+let newArray = myArray.filter(function(f) { return f !== 'two' });
 
-//const countItems = {}; // здесь будет храниться промежуточный результат
-
-// получаем объект в котором ключ - это элемент массива, а значение - сколько раз встречается элемент в списке
-// например так будет выглядеть этот объект после цикла:
-// {1: 1, 3: 2, 4: 2, 7: 1, 15: 1, 19: 2}
-// 1 встречается в тексте 1 раз, 2 встречается 2 раза, 4 встречается 2 раза и так далее
-//for (const item of numbers) {
-  // если элемент уже был, то прибавляем 1, если нет - устанавливаем 1
-  //countItems[item] = countItems[item] ? countItems[item] + 1 : 1;
-//}
-
-// обрабатываем ключи объекта, отфильтровываем все, что меньше 1
-//const result = Object.keys(countItems).filter((item) => countItems[item] > 1);
-//console.dir(result); // => ['3', '4', '19']
+console.log(newArray)
+// for (const y of arr) {
+//   if (y !== Number(count)) {  
+//     arr.push(y);
+//   }
+// }
+// console.log(arr);
