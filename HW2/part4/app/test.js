@@ -10,7 +10,7 @@ for (const i of result) {
   if (i > count) {
     count = i;
   }
-  }
+}
 for (const y of arr) {
   if (y !== Number(count)) {  
     newArr.push(y);
