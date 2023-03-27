@@ -10,14 +10,16 @@ class Marker {
   constructor(color, ink) {
     this.color = color;
     this.ink = ink;
+    this._percentInk = 0.5;
+
   }
 
   print(text) {
     let printedText = "";
     for (let i = 0; i < text.length; i++) {
-      if (this.ink >= 0.5 && text[i] != " ") {
+      if (this.ink >= this._percentInk && text[i] != " ") {
         printedText += text[i];
-        this.ink -= 0.5;
+        this.ink -= this._percentInk;
       } else {
         printedText += " ";
       }
