@@ -11,3 +11,8 @@ colors.forEach((color) => {
     color.classList.add("active");
   });
 });
+
+
+
+
+
