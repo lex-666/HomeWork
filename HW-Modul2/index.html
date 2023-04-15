@@ -13,8 +13,8 @@
       <div class="main__menu">
         <div class="main__first">
           <ul class="nav">
-            <li class="menu"><a href="#" class="menu__a">My Cups</a></li>
-            <li class="menu"><a href="javascript:void(0)" id="create-cups-link" class="menu__a">Create Cups</a></li>
+            <li class="menu">My Cups</li>
+          <li class="menu" id="create-cups-link">Create Cups</li>
           </ul>
         </div>
         <div class="main__second">
@@ -51,12 +51,53 @@
                 <div>Total ..... :</div>
           </fieldset>
         </div>
-        <div class="products">
-          <p class="products__title">Products list</p>
+        <div class="products">       
         </div>
       </div>
     </header>
+    <dialog id="create-cups-dialog" class="create">
+      <form id="create-cups-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <!-- <label for="color">Color:</label>
+        <input type="text" id="color" name="color" required><br> -->
+        <label for="color">Image:</label>
+        <input type="file" id="color" name="color" accept="image/*" required><br>
+
+
+        <label for="volume">Volume:</label>
+        <input type="number" id="volume" name="volume" required><br>
+
+        <button type="submit">OK</button>
+      </form>
+  </dialog>
+    <dialog id="edit-cup-dialog">
+  <form id="edit-cup-form" class="edit">
+    <label for="edit-name">Name:</label>
+    <input type="text" id="edit-name" required>
+
+    <label for="edit-color">Color:</label>
+    <input type="text" id="edit-color" required>
+    <!-- <input type="file" id="edit-color" name="color" accept="image/*" required> -->
+    
+    <label for="edit-volume">Volume:</label>
+    <input type="number" id="edit-volume" required>
+
+    <button type="submit">Save</button>
+    <button id="cancel-button" type="button" class="card__button">Cancel</button>
+
+  </form>
+</dialog>
+
+<!-- Dialog for Delete button -->
+<dialog id="delete-cup-dialog">
+  <p>Are you sure you want to delete this cup?</p>
+  <button id="delete-cup-confirm">Delete</button>
+  <button id="delete-cup-cancel">Cancel</button>
+</dialog>
   </body>
   </main>
-  <script src="test.js"></script>
+  <!-- <script src="app/test.js"></script> -->
+  <script src="app/data.js"></script>
 </html>
