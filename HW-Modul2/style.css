@@ -2,9 +2,9 @@ body {
   background-color: grey;
 }
 .tools {
-  width: 300px;
+  width: auto;
   background-color: white;
-  height: 500px;
+  height: auto;
   margin-top: 5px;
   margin-right: 5px;
 }
@@ -15,10 +15,11 @@ body {
 }
 .search {
   border-color: blue;
+  border-radius: 50px;
 }
 .products {
   background-color: white;
-  width: 1100px;
+  width: 1200px;
   margin-top: 5px;
   height: inherit;
   display: flex;
@@ -36,11 +37,12 @@ img {
   background: #eee;
   margin: auto;
   padding: 15px 25px;
+  display: grid;
 }
-.container {
+/* .container {
   margin-right: 10px;
   margin-left: 10px;
-}
+} */
 .second {
   display: flex;
 }
@@ -65,6 +67,10 @@ img {
   list-style: none;
   gap: 20px;
 }
+.search_all--btn {
+  display: flex;
+  gap: 20px;
+}
 .search {
   width: 300px;
   height: 25px;
@@ -74,12 +80,14 @@ img {
   border-color: red;
   color: red;
   background-color: white;
+  border-radius: 50px;
 }
 .btn2 {
   height: 30px;
   border-color: blue;
   color: blue;
   background-color: white;
+  border-radius: 50px;
 }
 .main_first {
 }
@@ -108,5 +116,234 @@ img {
 }
 .edit {
   width: 300px;
-  height: 400px;
+  height: 425px;
+}
+.close__btn {
+  text-align: right;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.product {
+  width: 23%; /* задайте нужную ширину элемента */
+  margin-bottom: 20px; /* добавьте отступ между элементами */
+}
+
+.sort__choise {
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 175px;
+}
+@media (max-width: 768px) {
+  .main__menu {
+    display: grid;
+  }
+  .main__first {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main__second {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.result__search--volume {
+  text-align: center;
+  margin-top: 15px;
+}
+@media (max-width: 520px) {
+  .result__search--volume {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .nav__second {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .search_all--btn {
+    justify-content: center;
+  }
+  .second {
+    display: grid;
+  }
+  .tools {
+    display: grid;
+    margin-right: 0px;
+  }
+  .products {
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  .search {
+    width: fit-content;
+  }
+  .sort__choise {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.search__btn {
+  text-align: center;
+  justify-content: center;
+}
+
+.ok__create {
+  width: 100px;
+  margin-top: 50px;
+}
+
+.title__create--cup {
+  text-align: center;
+  justify-content: center;
+}
+.title__create {
+  margin-top: 10px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.color__create {
+  margin-top: 10px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.volume__create {
+  margin-top: 10px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.name__title {
+  display: grid;
+  margin-top: 20px;
+  text-align: center;
+}
+.color__title {
+  display: grid;
+  margin-top: 20px;
+}
+
+.volume__title {
+  display: grid;
+  margin-top: 20px;
+}
+.title__cup {
+  text-align: center;
+}
+.create {
+  background-color: aliceblue;
+}
+.name__edit {
+  display: grid;
+  /* margin-top: 20px; */
+  text-align: center;
+}
+.input__name-edit {
+  /* margin-top: 10px; */
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img__edit {
+  margin-left: 50px;
+}
+.color__edit {
+  display: grid;
+  text-align: center;
+}
+.input__color--edit {
+  /* margin-top: 10px; */
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.volume__edit {
+  display: grid;
+  text-align: center;
+  margin-top: 10px;
+}
+.input_volume--edit {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.edit__btn {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.edit__save {
+  width: 100px;
+}
+.edit__cancel {
+  width: 100px;
+}
+.delete__title {
+  font-size: large;
+  font-weight: bold;
+}
+.delete__dialog--btn {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.delete__dialog--main {
+  height: 200px;
+}
+
+.name-value {
+  font-size: large;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card__edit {
+  margin-left: 15px;
+  width: 80px;
+}
+.card__delete {
+  margin-left: 15px;
+  width: 80px;
+}
+.cup__volume {
+  text-align: center;
+  font-weight: bold;
+}
+.volume-value {
+  text-align: center;
+}
+.volume-container {
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+  margin-bottom: 35px;
+}
+
+.cup__volume {
+  margin-right: 10px;
+}
+.radius {
+  border-radius: 5px;
+  height: 23px;
 }
