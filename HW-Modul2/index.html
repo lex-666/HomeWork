@@ -20,7 +20,7 @@
         <div class="main__second">
           <ul class="nav__second">
             <li class="menu__slave">
-              <input class="search" id="search-input" type="text" placeholder="Search..." />
+              <input class="search" id="search-input" type="text" placeholder="Search..." autocomplete="off"/>
             </li>
             <div class="search_all--btn">
               <li class="menu__slave">
@@ -52,36 +52,33 @@
       <form class = "title__create--cup" id="create-cups-form">
         <div class="name__title">
           <label class = "name__create" for="name">Name:</label>
-          <input class = "title__create radius" type="text" id="name" name="name" required><br>
+          <input class = "title__create radius" type="text" id="name" name="name" autocomplete="off" required><br>
         </div>
         <div class="color__title">
           <label for="color">Image:</label>
-          <input class = "color__create radius" type="file" id="color" name="color" accept="image/*" required><br>
+          <input class = "color__create radius" type="file" id="color" name="color" accept="image/*" autocomplete="off" required><br>
         </div>
         <div class="volume__title">
           <label for="volume">Volume:</label>
-          <input class = "volume__create radius"type="number" id="volume" name="volume" required><br>
+          <input class = "volume__create radius"type="number" id="volume" name="volume" autocomplete="off" required><br>
         </div>
         <button class = "ok__create search__btn btn1" type="submit">OK</button>
       </form>
   </dialog>
     <dialog id="edit-cup-dialog">
-      <!-- <div class="close__btn">
-          <button class = "close-btn" id="close-button" onclick="editCupDialog.close()">x</button>
-      </div> -->
       <form id="edit-cup-form" class="edit">
         <div class="name__edit">
           <label for="edit-name">Name:</label>
-          <input class="input__name-edit radius" type="text" id="edit-name" required>
+          <input class="input__name-edit radius" type="text" id="edit-name" autocomplete="off" required>
         </div>
         <img class="img__edit" id="edit-color-preview" src="" alt="Current product image">          
         <div class="color__edit">
           <label for="edit-color">Color:</label>
-          <input class="input__color--edit radius" type="file" accept="image/*" id="edit-color" required>
+          <input class="input__color--edit radius" type="file" accept="image/*" id="edit-color" autocomplete="off">
         </div>
        <div class="volume__edit">
           <label for="edit-volume">Volume:</label>
-          <input class="input_volume--edit" type="number" id="edit-volume" required>
+          <input class="input_volume--edit" type="number" id="edit-volume" autocomplete="off" required>
         </div>
         <div class="edit__btn">
           <button class="edit__save search__btn btn1" type="submit">Save</button>
@@ -94,8 +91,7 @@
       <!-- Dialog for Delete button -->
       <dialog id="delete-cup-dialog" class="delete__dialog--main">
         <div class="delete__dialog">
-          <div class="close__btn">
-            <!-- <button class="delete__close-btn" id="close-button" onclick="deleteCupDialog.close()">x</button> -->
+          <div class="close__btn">            
           </div>
           <p class="delete__title">Are you sure you want to delete this cup?</p>
           <div class="delete__dialog--btn">
@@ -106,6 +102,5 @@
       </dialog>
   </body>
   </main>
-  <!-- <script src="app/test.js"></script> -->
-  <script src="app/data.js"></script>
+  <script src="app/data1.js"></script>
 </html>
